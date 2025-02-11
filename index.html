@@ -17,215 +17,243 @@
             background-color: #4f46e5;
             color: white;
         }
-        html {
-            scroll-behavior: smooth;
-        }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Main Container -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- Header Section with Logo -->
+        <!-- Header Section -->
         <div class="flex items-center justify-center space-x-6 mb-12">
-            <img src="/api/placeholder/96/96" alt="University Logo" class="w-24 h-24 rounded-full shadow-md object-cover">
+            <img src="https://github.com/Net4uCA/Net4uCA.github.io/blob/main/net4u.png?raw=true" alt="University Logo" class="w-24 h-24 rounded-full shadow-md">
             <div class="text-left">
-                <h1 class="text-4xl font-bold text-gray-900">Networks for Humans laboratory (Net4U)</h1>
+                <h1 class="text-4xl font-bold text-gray-900">Networks for Humans laboratory - Net4U </h1>
                 <p class="text-xl text-gray-600 mt-2">Internet Engineering Courses</p>
-                <p class="text-xl text-gray-600 mt-2">University of Cagliari</p>
+                <p class="text-lg text-gray-600">University of Cagliari</p>
             </div>
         </div>
 
-        <!-- Course Content -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <!-- Course Tabs -->
+        <div class="mb-8">
+            <div class="border-b border-gray-200">
+                <nav class="flex -mb-px">
+                    <button onclick="switchTab('nlp')" class="tab-button active w-1/4 py-4 px-6 text-center border-b-2 font-medium text-sm rounded-t-lg hover:bg-indigo-50">
+                        Natural Language Processing
+                    </button>
+                    <button onclick="switchTab('cloud')" class="tab-button w-1/4 py-4 px-6 text-center border-b-2 font-medium text-sm rounded-t-lg hover:bg-indigo-50">
+                        Cloud Computing
+                    </button>
+                    
+                </nav>
+            </div>
+        </div>
+
+        <!-- NLP Course Content -->
+        <div id="nlp" class="tab-content active">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
             <!-- Course Header -->
             <div class="bg-indigo-600 px-6 py-8">
-                <h1 class="text-3xl font-bold text-white">Natural Language Processing</h1>
-                <p class="mt-2 text-indigo-100">From Fundamentals to Large Language Models</p>
+                <h1 class="text-3xl font-bold text-white">Seminar on Text Classification & Natural Language Processing</h1>
+                <p class="mt-2 text-indigo-100">From Text Classification to Large Language Models</p>
                 <div class="mt-4 flex items-center text-indigo-100">
-                    <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <span>10 Hours</span>
+                    <span class="mr-6">Duration: 10 Hours (5 Lessons)</span>
+                    <span>February 2025</span>
                 </div>
             </div>
 
             <!-- Course Overview -->
             <div class="px-6 py-8">
                 <h2 class="text-2xl font-bold text-gray-800">Course Overview</h2>
-                <p class="mt-4 text-gray-600">A comprehensive introduction to Natural Language Processing, covering both traditional approaches and modern Large Language Models. The course combines theoretical foundations with hands-on workshops.</p>
+                <p class="mt-4 text-gray-600">A comprehensive seminar covering modern text classification techniques, from fundamentals to advanced LLM applications. The course combines theoretical foundations with hands-on practice, emphasizing real-world applications.</p>
 
-                <!-- Course Highlights -->
+                <!-- Course Materials -->
+                <div class="mt-6">
+                    <a href="https://github.com/lu-ser/NLPSeminar" class="text-indigo-600 hover:text-indigo-800 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                        Course Materials Repository
+                    </a>
+                </div>
+
+                <!-- Learning Objectives -->
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="border rounded-lg p-4">
-                        <h3 class="font-semibold text-lg text-gray-800">What You'll Learn</h3>
+                        <h3 class="font-semibold text-lg text-gray-800">Learning Objectives</h3>
                         <ul class="mt-2 space-y-2 text-gray-600">
                             <li class="flex items-center">
                                 <svg class="h-4 w-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Text Classification Fundamentals
+                                Understand fundamental concepts of text classification
                             </li>
                             <li class="flex items-center">
                                 <svg class="h-4 w-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Modern NLP Techniques
+                                Master modern NLP techniques and architectures
                             </li>
                             <li class="flex items-center">
                                 <svg class="h-4 w-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Large Language Models
+                                Gain practical experience with LLMs
                             </li>
                             <li class="flex items-center">
                                 <svg class="h-4 w-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                RAG Implementation
+                                Develop hands-on skills in RAG implementation
                             </li>
                         </ul>
                     </div>
                     <div class="border rounded-lg p-4">
-                        <h3 class="font-semibold text-lg text-gray-800">Prerequisites</h3>
+                        <h3 class="font-semibold text-lg text-gray-800">Course Structure</h3>
                         <ul class="mt-2 space-y-2 text-gray-600">
                             <li class="flex items-center">
                                 <svg class="h-4 w-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
-                                Basic Python programming
+                                5 intensive lessons (2 hours each)
                             </li>
                             <li class="flex items-center">
                                 <svg class="h-4 w-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
-                                Basic ML concepts
+                                Theoretical foundations + hands-on workshops
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-4 w-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Practical exercises and real-world applications
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Course Syllabus -->
+                <!-- Detailed Syllabus -->
                 <div class="mt-12">
                     <h2 class="text-2xl font-bold text-gray-800">Course Syllabus</h2>
                     <div class="mt-8 space-y-6">
-                        <!-- Module 1 -->
+                        <!-- Lesson 1 -->
                         <div class="border-l-4 border-indigo-500 pl-4">
-                            <h3 class="font-semibold text-lg text-gray-800">1. Fundamentals of Text Classification (2h)</h3>
+                            <h3 class="font-semibold text-lg text-gray-800">Lesson 1: Text Classification and Natural Language Processing</h3>
+                            <p class="text-sm text-gray-500">February 3rd - 2 hours</p>
                             <ul class="mt-2 text-gray-600 list-disc list-inside">
-                                <li>Course overview and objectives</li>
-                                <li>Real-world text classification applications</li>
-                                <li>Tokenization, stop words, stemming</li>
-                                <li>Workshop: Building a text classifier</li>
+                                <li>Introduction to NLP and its importance</li>
+                                <li>Applications: Sentiment Analysis, Machine Translation, Speech Recognition</li>
+                                <li>Text Classification Tasks and Real-world Applications</li>
+                                <li>NLP Pipeline: Data Acquisition, Preprocessing, Feature Engineering</li>
+                                <li>Workshop: Building a basic sentiment classifier</li>
                             </ul>
                         </div>
 
-                        <!-- Module 2 -->
+                        <!-- Lesson 2 -->
                         <div class="border-l-4 border-indigo-500 pl-4">
-                            <h3 class="font-semibold text-lg text-gray-800">2. Modern Text Classification (2h)</h3>
+                            <h3 class="font-semibold text-lg text-gray-800">Lesson 2: Modern Text Classification</h3>
+                            <p class="text-sm text-gray-500">February 4th - 2 hours</p>
                             <ul class="mt-2 text-gray-600 list-disc list-inside">
-                                <li>From one-hot encoding to dense representations</li>
-                                <li>BERT architecture</li>
-                                <li>Contextual embeddings</li>
-                                <li>Workshop: BERT hands-on</li>
+                                <li>Tokens and Embeddings Fundamentals</li>
+                                <li>Word Embeddings: Word2Vec, BERT</li>
+                                <li>Beyond BERT: Modern Architectures</li>
+                                <li>Workshop: Tokenizers and Embeddings in Practice</li>
                             </ul>
                         </div>
 
-                        <!-- Module 3 -->
+                        <!-- Lesson 3 -->
                         <div class="border-l-4 border-indigo-500 pl-4">
-                            <h3 class="font-semibold text-lg text-gray-800">3. Large Language Models (2h)</h3>
+                            <h3 class="font-semibold text-lg text-gray-800">Lesson 3: Generative Large Language Models</h3>
+                            <p class="text-sm text-gray-500">February 5th - 2 hours</p>
                             <ul class="mt-2 text-gray-600 list-disc list-inside">
-                                <li>LLM Theory and Knowledge Acquisition</li>
-                                <li>Training and Instruction Tuning</li>
-                                <li>Strengths and Limitations</li>
-                                <li>Hands-on: Zero-shot and Few-shot Learning</li>
+                                <li>From Discriminative to Generative Models</li>
+                                <li>Understanding Model Parameters and Resources</li>
+                                <li>LLM Ecosystem: Closed vs Open Models</li>
+                                <li>Context Windows and Prompting Techniques</li>
                             </ul>
                         </div>
 
-                        <!-- Module 4 -->
+                        <!-- Lesson 4 -->
                         <div class="border-l-4 border-indigo-500 pl-4">
-                            <h3 class="font-semibold text-lg text-gray-800">4. RAG Implementation (3h)</h3>
+                            <h3 class="font-semibold text-lg text-gray-800">Lesson 4: Retrieval Augmented Generation</h3>
+                            <p class="text-sm text-gray-500">February 6th - 2 hours</p>
                             <ul class="mt-2 text-gray-600 list-disc list-inside">
-                                <li>RAG Fundamentals and Architecture</li>
-                                <li>Vector Databases</li>
-                                <li>Practical Implementation Workshop</li>
-                                <li>Adding Search Capabilities</li>
+                                <li>LLM Limitations and RAG Solutions</li>
+                                <li>Semantic Search and Dense Retrieval</li>
+                                <li>Document Chunking Strategies</li>
+                                <li>RAG Implementation Workshop</li>
                             </ul>
                         </div>
 
-                        <!-- Module 5 -->
+                        <!-- Lesson 5 -->
                         <div class="border-l-4 border-indigo-500 pl-4">
-                            <h3 class="font-semibold text-lg text-gray-800">5. Future Trends and Assessment (1h)</h3>
+                            <h3 class="font-semibold text-lg text-gray-800">Lesson 5: Complex Applications with Language Models</h3>
+                            <p class="text-sm text-gray-500">February 6th - 2 hours</p>
                             <ul class="mt-2 text-gray-600 list-disc list-inside">
-                                <li>Emerging Trends and Research Directions</li>
-                                <li>Industry Applications</li>
-                                <li>Mini-Project Development</li>
-                                <li>Optional Final Assessment (15 min)</li>
+                                <li>Web Scraping Agents</li>
+                                <li>Data Augmentation Techniques</li>
+                                <li>Hallucination Detection</li>
+                                <li>Specialized Agents Development</li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Course Summary Box -->
+                    <!-- Course Summary -->
                     <div class="mt-12 bg-gray-50 rounded-lg p-6">
-                        <h2 class="text-2xl font-bold text-gray-800">Course Summary</h2>
+                        <h2 class="text-2xl font-bold text-gray-800">Course Information</h2>
                         <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div class="flex items-start">
                                 <svg class="h-6 w-6 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                                 <div class="ml-4">
-                                    <h3 class="font-semibold text-gray-800">Total Duration</h3>
-                                    <p class="mt-1 text-gray-600">10 Hours</p>
+                                    <h3 class="font-semibold text-gray-800">Duration</h3>
+                                    <p class="mt-1 text-gray-600">10 Hours Total</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <svg class="h-6 w-6 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                                </svg>
-                                <div class="ml-4">
-                                    <h3 class="font-semibold text-gray-800">Modules</h3>
-                                    <p class="mt-1 text-gray-600">5 Core Units</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <svg class="h-6 w-6 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                                </svg>
-                                <div class="ml-4">
-                                    <h3 class="font-semibold text-gray-800">Certificate</h3>
-                                    <p class="mt-1 text-gray-600">Upon Completion</p>
-                                </div>
-                            </div>
-                        </div>
+                                <svg class="h-6 w-6 text-indigo-500 mt-1" fill="none" stroke="currentColor" view
+        </div>
+
+        <!-- Cloud Computing Course -->
+        <div id="cloud" class="tab-content">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="bg-blue-600 px-6 py-8">
+                    <h1 class="text-3xl font-bold text-white">Other Courses</h1>
+                    <p class="mt-2 text-blue-100"> - </p>
+                    <div class="mt-4 flex items-center text-blue-100">
+                        <span class="mr-6">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="px-6 py-8">
+                    <h2 class="text-2xl font-bold text-gray-800">Course Overview</h2>
+                    <p class="mt-4 text-gray-600">Comprehensive introduction to cloud computing concepts, covering infrastructure management, service deployment, and scalability considerations.</p>
+                    <div class="mt-8 bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-800">Course Details Coming Soon</h3>
+                        <p class="mt-2 text-gray-600">Stay tuned for more information about upcoming course.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
 
     <script>
         function switchTab(tabId) {
+            // Hide all tab contents
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.remove('active');
             });
             
+            // Remove active class from all buttons
             document.querySelectorAll('.tab-button').forEach(button => {
                 button.classList.remove('active');
             });
             
+            // Show selected tab content
             document.getElementById(tabId).classList.add('active');
+            
+            // Add active class to clicked button
             event.currentTarget.classList.add('active');
-        }
-
-        window.addEventListener('hashchange', function() {
-            const hash = window.location.hash.substring(1);
-            if (hash) {
-                switchTab(hash);
-            }
-        });
-
-        if (window.location.hash) {
-            const hash = window.location.hash.substring(1);
-            switchTab(hash);
         }
     </script>
 </body>
